@@ -76,7 +76,8 @@ class WhereTo : AppCompatActivity() , OnMapReadyCallback {
         mGoogleMap = googleMap
         val latLng = com.google.android.gms.maps.model.LatLng(
             currentLocation.latitude,
-            currentLocation.longitude
+            currentLocation.longitude,
+
         )
         val markerOptions= MarkerOptions().position(latLng).title("currentLocation ")
         googleMap?.animateCamera(CameraUpdateFactory.newLatLng(latLng))
