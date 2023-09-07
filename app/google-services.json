@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "976801212555",
+    "project_id": "mj-riding-app",
+    "storage_bucket": "mj-riding-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976801212555:android:371e0ea6dc1e4e720ccc8e",
+        "android_client_info": {
+          "package_name": "com.hello.mj_riding_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976801212555-rb2cg6of3l483d31bd0ln4ge71b6gfj3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hello.mj_riding_app",
+            "certificate_hash": "7fdf7accdb788971536ca50f573892e0b9217ce6"
+          }
+        },
+        {
+          "client_id": "976801212555-h5otp6db785u4lib3sh1fn2lu7knm06f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUjPtgRrOmJYTWyUYGU5fN_E8WXoZ0icI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976801212555-h5otp6db785u4lib3sh1fn2lu7knm06f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

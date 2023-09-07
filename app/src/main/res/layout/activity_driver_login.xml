@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/driverlogin"
+    tools:context=".DriverLogin">
+
+
+    <EditText
+        android:id="@+id/dr1_phoneEditTextNumber"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edit"
+        android:ems="10"
+        android:hint="Type your number"
+        android:inputType="number"
+        android:paddingStart="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="#606060"
+        app:layout_constraintBottom_toTopOf="@+id/dr1_sendOTPBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dr1_editTextNumber2" />
+
+    <Button
+        android:id="@+id/dr1_sendOTPBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginBottom="92dp"
+        android:backgroundTint="@color/btn_color"
+        android:text="Send otp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/dr1_editTextNumber2"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/edit"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number"
+        android:text=" +91"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/dr1_phoneEditTextNumber"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Enter your \nMobile number"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dr1_editTextNumber2"
+        app:layout_constraintStart_toStartOf="@+id/dr1_editTextNumber2" />
+
+    <ProgressBar
+        android:id="@+id/dr1_phoneProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:indeterminateTint="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

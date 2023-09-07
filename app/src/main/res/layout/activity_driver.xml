@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/driver"
+    tools:context=".Driver">
+
+    <TextView
+        android:id="@+id/tx_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Register as a Driver"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dr_name"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/detailbox"
+        android:gravity="center"
+        android:hint="Enter your Full Name"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_login" />
+
+    <EditText
+        android:id="@+id/dr_aadhar_number"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12dp"
+        android:inputType="number"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/detailbox"
+        android:gravity="center"
+        android:hint="Enter your Aadhaar Number"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dr_name" />
+    <EditText
+        android:id="@+id/dr_address"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/detailbox"
+        android:gravity="center"
+        android:hint="Enter your City"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dr_aadhar_number" />
+    <EditText
+        android:id="@+id/dr_email_id"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/detailbox"
+        android:gravity="center"
+        android:hint="Enter your Email Id"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dr_address" />
+    <EditText
+        android:id="@+id/dr_phone"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        android:inputType="number"
+        android:background="@drawable/detailbox"
+        android:gravity="center"
+        android:hint="Enter your Mobile Number"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dr_email_id" />
+
+    <Button
+        android:id="@+id/dr_verifyOTPBtn"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="@color/btn_color"
+        android:text="Verify Your Details"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dr_phone"
+        app:layout_constraintVertical_bias="0.215" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
